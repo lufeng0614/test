@@ -1,0 +1,5 @@
+{
+  "name": "DataGov Standard Manager",
+  "description": "A comprehensive data governance platform module for managing data standard documents with search, batch operations, and file handling capabilities.",
+  "requestFramePermissions": []
+}
