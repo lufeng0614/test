@@ -6,7 +6,10 @@ import { StandardType } from "../types";
 // We access it directly to ensure compatibility with the build system and security guidelines.
 const apiKey = process.env.API_KEY;
 
-const ai = new GoogleGenAI({ apiKey: apiKey });
+// 标准写法：使用 VITE_ 前缀和 import.meta.env
+const ai = new GoogleGenAI({ 
+  apiKey: import.meta.env.VITE_API_KEY || '' 
+});
 
 /**
  * Gemini Service for Data Governance Platform
